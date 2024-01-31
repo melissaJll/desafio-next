@@ -32,7 +32,7 @@ const StyledHome = styled.nav`
 
     &:hover,
     &:focus {
-      background-color: white;
+      background-color: #ca3609;
       color: black;
     }
 
