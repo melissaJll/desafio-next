@@ -5,14 +5,13 @@ import styled from "styled-components";
 export default function Home() {
   return (
     <>
-      <StyledHome>
-        <Head>
-          <title>STEPHEN KING - 2024</title>
-          <meta name="description" content="" />
-          <meta name="keywords" content="" />
-        </Head>
-        <Menu></Menu>
+      <Head>
+        <title>STEPHEN KING - 2024</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+      </Head>
 
+      <StyledHome>
         <h1> STEPHEN KING</h1>
         <h3>Livros</h3>
       </StyledHome>
