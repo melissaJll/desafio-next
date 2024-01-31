@@ -4,6 +4,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Menu />
+      <h1> STEPHEN KING</h1>
 
       <main>{children}</main>
     </>
