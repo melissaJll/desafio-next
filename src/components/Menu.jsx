@@ -5,7 +5,8 @@ export default function Menu() {
   return (
     <>
       <StyledHome>
-        <Link href="/">Livros</Link>
+        <Link href="/">Home</Link>
+        <Link href="/livros">Livros</Link>
         <Link href="/contos">Contos</Link>
       </StyledHome>
     </>
