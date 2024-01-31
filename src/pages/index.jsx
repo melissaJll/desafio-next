@@ -21,8 +21,6 @@ export default function Home() {
 }
 
 const StyledHome = styled.section`
-  background-color: #001020;
-
   h1 {
     font-family: "Creepster", system-ui;
     font-weight: 400;
