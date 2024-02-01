@@ -45,7 +45,7 @@ const StyledListaLivros = styled.div`
   margin: auto;
 
   article {
-    background-color: #f7f7f7;
+    background-color: #fffef4;
     padding: 1rem;
     margin-bottom: 1rem;
     margin-right: 0.5rem;
