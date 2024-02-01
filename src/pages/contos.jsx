@@ -5,7 +5,6 @@ export async function getStaticProps() {
   try {
     const resposta = await fetch(`${serverApi}shorts`);
     const dados = await resposta.json();
-    // console.log(dados);
 
     if (!resposta.ok) {
       throw new Error(`Erro: ${resposta.status} - ${resposta.statusText}`);
