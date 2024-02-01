@@ -5,7 +5,6 @@ export async function getStaticProps() {
   try {
     const resposta = await fetch(`${serverApi}books`);
     const dados = await resposta.json();
-    // console.log(dados);
 
     if (!resposta.ok) {
       throw new Error(`Erro: ${resposta.status} - ${resposta.statusText}`);
@@ -27,10 +26,9 @@ export async function getStaticProps() {
 export default function Livros({ livros }) {
   return (
     <>
-      <section>
-        <h2>Livros</h2>
-      </section>
-      {/* <ListaLivros livros={livros} /> */}
+      <h3>Livros 2</h3>
+
+      <ListaLivros livros={livros} />
     </>
   );
 }
