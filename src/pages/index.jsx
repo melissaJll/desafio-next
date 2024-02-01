@@ -12,19 +12,10 @@ export default function Home() {
       </Head>
 
       <StyledHome>
-        <h1> STEPHEN KING</h1>
         <h3>Livros</h3>
       </StyledHome>
     </>
   );
 }
 
-const StyledHome = styled.section`
-  h1 {
-    font-family: "Creepster", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 5rem;
-    color: #eae5d3;
-  }
-`;
+const StyledHome = styled.section``;
