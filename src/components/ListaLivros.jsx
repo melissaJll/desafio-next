@@ -64,7 +64,15 @@ const StyledListaLivros = styled.div`
       }
     }
   }
-  details {
+  summary {
     cursor: pointer;
+    background-color: #d34d35;
+    padding: 0.6rem;
+    border-radius: 6px;
+    color: #f8f6f2;
+  }
+  details {
+    background-color: #fffef4;
+    /* padding: 1rem; */
   }
 `;
