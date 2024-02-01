@@ -40,7 +40,7 @@ const StyledLayout = styled.div`
     }
   }
   main {
-    background-color: #fffdf0;
+    background-color: #fffbf0;
     border-radius: 3px;
     padding: 2rem;
   }
