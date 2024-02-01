@@ -2,6 +2,7 @@ import Head from "next/head";
 import styled from "styled-components";
 import serverApi from "./api/server";
 import Link from "next/link";
+import ListaLivros from "@/components/ListaLivros";
 
 export async function getStaticProps() {
   try {
@@ -37,19 +38,13 @@ export default function Home({ livros }) {
       <StyledHome>
         <h3>Livros</h3>
 
-        {livros.map((livro) => {
-          return (
-            <article key={livro.id}>
-              <Link href={`/books/${livro.id}`}>
-                <h3>{livro.Title}</h3>
-                <p>{livro.Pages} </p>
-              </Link>
-            </article>
-          );
-        })}
+        <ListaLivros livros={livros} />
       </StyledHome>
     </>
   );
 }
 
-const StyledHome = styled.section``;
+const StyledHome = styled.section`
+  h1 {
+  }
+`;
