@@ -5,7 +5,13 @@ export default function Layout({ children }) {
   return (
     <>
       <StyledLayout>
-        <h1 className="blink_me"> STEPHEN KING</h1>
+        <div className="layout">
+          <h1 className="blink_me"> STEPHEN KING</h1>
+          <p>
+            Monsters are real, and ghosts are real too. They live inside us, and
+            sometimes, they win.
+          </p>
+        </div>
         <Menu></Menu>
         <main>{children}</main>
       </StyledLayout>
@@ -17,7 +23,7 @@ const StyledLayout = styled.div`
   background-color: #001020;
 
   .blink_me {
-    animation: blinker 14s ease-out infinite;
+    /* animation: blinker 14s ease-out infinite; */
   }
 
   @keyframes blinker {
@@ -27,17 +33,32 @@ const StyledLayout = styled.div`
     }
   }
 
-  h1 {
+  .layout > h1 {
     font-family: "Creepster", system-ui;
     font-weight: 400;
     font-style: normal;
     font-size: 7rem;
     color: #eae5d3;
-    text-align: center;
-    padding: 4rem;
     &:hover {
       color: #ec1111;
     }
+  }
+
+  .layout {
+    margin: auto;
+    padding-top: 4rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .layout > p {
+    color: #ec1111;
+    font-family: "Playfair Display", serif;
+    width: 50%;
+    color: #eae5d3;
+    text-align: center;
   }
   main {
     background-color: #fffbf0;
