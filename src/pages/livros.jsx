@@ -26,7 +26,7 @@ export async function getStaticProps() {
 export default function Livros({ livros }) {
   return (
     <>
-      <h3>Livros 2</h3>
+      <h3>Livros</h3>
 
       <ListaLivros livros={livros} />
     </>
