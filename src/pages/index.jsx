@@ -36,9 +36,9 @@ export default function Home({ livros }) {
       </Head>
 
       <StyledHome>
-        <h3>Livros</h3>
+        <h3>Home</h3>
 
-        <ListaLivros livros={livros} />
+        {/* <ListaLivros livros={livros} /> */}
       </StyledHome>
     </>
   );
