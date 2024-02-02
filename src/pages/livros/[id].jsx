@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
-const Livro = () => {
+export async function getStaticPaths() {
+  return {
+    paths: [],
+    fallback: "blocking",
+  };
+}
+
+export default function Livro() {
   return (
     <StyledLivro>
       <img
@@ -20,7 +27,7 @@ const Livro = () => {
       </div>
     </StyledLivro>
   );
-};
+}
 
 const StyledLivro = styled.article`
   display: flex;
@@ -62,5 +69,3 @@ const StyledLivro = styled.article`
     color: #333;
   }
 `;
-
-export default Livro;
