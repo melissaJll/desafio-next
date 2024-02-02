@@ -1,4 +1,30 @@
 import styled from "styled-components";
+import serverApi from "../api/server";
+
+export async function getStaticProps({ params }) {
+  const { id } = params;
+
+  try {
+    const resposta = await fetch(`${serverApi}book/${id}`);
+    console.log(id);
+    if (!resposta.ok) {
+      throw new Error(`Erro: ${resposta.status} - ${resposta.statusText}`);
+    }
+    const dados = await resposta.json();
+    console.log(dados);
+
+    return {
+      props: {
+        livros: dados.data,
+      },
+    };
+  } catch (error) {
+    console.error("Deu ruim: " + error.message);
+    return {
+      notFound: true,
+    };
+  }
+}
 
 export async function getStaticPaths() {
   return {
@@ -7,7 +33,7 @@ export async function getStaticPaths() {
   };
 }
 
-export default function Livro() {
+export default function Livro({ livros }) {
   return (
     <StyledLivro>
       <img
@@ -15,8 +41,10 @@ export default function Livro() {
         alt="Imagem do Livro"
       />
       <div className="info">
-        <h2>#1 Titulo</h2>
-        <p>Ano de Publicação: 1999</p>
+        <h2>
+          {livros.id}# {livros.Title}
+        </h2>
+        <p>Ano de Publicação: {livros.Year} </p>
         <p className="preco">R$ 200</p>
         <p className="descricao">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
@@ -24,6 +52,8 @@ export default function Livro() {
           nulla ut nisl. Quisque quis sapien felis. Sed viverra eros nisi, ac
           lobortis felis efficitur et.
         </p>
+
+        <p>ISBN: {livros.ISBN} </p>
       </div>
     </StyledLivro>
   );
@@ -34,7 +64,7 @@ const StyledLivro = styled.article`
   align-items: center;
   flex-wrap: wrap;
   max-width: 690px;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 1rem;
 
   img {
@@ -49,7 +79,7 @@ const StyledLivro = styled.article`
   }
   .descricao {
     font-size: 18px;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   h2 {
