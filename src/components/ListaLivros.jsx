@@ -9,6 +9,16 @@ export default function ListaLivros({ livros }) {
           return (
             <article key={livro.id}>
               <Link href={`/livros/${livro.id}`}>
+                <div className="imagem-livros">
+                  <img
+                    src="https://stephenking.com/images/novel/holly.jpg"
+                    alt="Imagem do Livro"
+                  />
+                  {/* <img
+                    src="https://via.placeholder.com/450x300"
+                    alt="Imagem do Livro"
+                  /> */}
+                </div>
                 <h3>{livro.Title}</h3>
                 <p>Páginas: {livro.Pages} </p>
                 <p>Ano de Lançamento: {livro.Year}</p>
@@ -52,7 +62,7 @@ const StyledListaLivros = styled.div`
     border: solid 1px #050f2c73;
     border-radius: 0.5rem;
     transition: transform 200ms;
-    width: 43%;
+    width: 36%;
 
     & a {
       text-decoration: none;
@@ -74,5 +84,9 @@ const StyledListaLivros = styled.div`
   details {
     background-color: #fffef4;
     /* padding: 1rem; */
+  }
+  .imagem-livros {
+    display: flex;
+    justify-content: center;
   }
 `;
