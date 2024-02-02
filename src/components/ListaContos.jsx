@@ -27,23 +27,25 @@ const StyledListaContos = styled.div`
   margin: auto;
 
   article {
-    background-color: #f7f7f7;
+    background-color: #07173d;
     padding: 1rem;
     margin-bottom: 1rem;
     margin-right: 0.5rem;
     border: solid 1px #050f2c73;
     border-radius: 0.5rem;
     transition: transform 200ms;
-    width: 43%;
+    width: 85%;
 
     & a {
       text-decoration: none;
-      color: black;
-
-      &:hover,
-      &:focus {
-        color: #d65e2f;
-      }
+      color: white;
+    }
+    &:hover,
+    &:focus {
+      background-color: #b42525;
+    }
+    @media screen and (min-width: 500px) {
+      width: 48%;
     }
   }
   details {

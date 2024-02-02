@@ -62,7 +62,7 @@ const StyledListaLivros = styled.div`
     border: solid 1px #050f2c73;
     border-radius: 0.5rem;
     transition: transform 200ms;
-    width: 66%;
+    width: 100%;
 
     & a {
       text-decoration: none;
