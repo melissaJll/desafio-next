@@ -1,6 +1,7 @@
 import ListaContos from "@/components/ListaContos";
 import serverApi from "./api/server";
 import Head from "next/head";
+import styled from "styled-components";
 
 export async function getStaticProps() {
   try {
@@ -30,10 +31,13 @@ export default function Contos({ contos }) {
       <Head>
         <title>Contos</title>
       </Head>
-      <section>
+      <StyledContos>
         <h2>Contos</h2>
-      </section>
+      </StyledContos>
       <ListaContos contos={contos}></ListaContos>
     </>
   );
 }
+const StyledContos = styled.section`
+  text-align: center;
+`;
