@@ -1,5 +1,6 @@
 import ListaLivros from "@/components/ListaLivros";
 import serverApi from "./api/server";
+import Head from "next/head";
 
 export async function getStaticProps() {
   try {
@@ -26,6 +27,9 @@ export async function getStaticProps() {
 export default function Livros({ livros }) {
   return (
     <>
+      <Head>
+        <title>Livros</title>
+      </Head>
       <h3>Livros</h3>
 
       <ListaLivros livros={livros} />
