@@ -11,19 +11,20 @@ const Livro = () => {
         <h2>#1 Titulo</h2>
         <p>Ano de Publicação: 1999</p>
         <p className="preco">R$ 200</p>
+        <p className="descricao">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
+          eros ut posuere fermentum, elit velit fermentum odio, id luctus ipsum
+          nulla ut nisl. Quisque quis sapien felis. Sed viverra eros nisi, ac
+          lobortis felis efficitur et.
+        </p>
       </div>
-      <p className="descricao">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
-        eros ut posuere fermentum, elit velit fermentum odio, id luctus ipsum
-        nulla ut nisl. Quisque quis sapien felis. Sed viverra eros nisi, ac
-        lobortis felis efficitur et.
-      </p>
     </StyledLivro>
   );
 };
 
 const StyledLivro = styled.article`
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   max-width: 690px;
   margin: 0 auto;
@@ -37,6 +38,11 @@ const StyledLivro = styled.article`
 
   .info {
     flex-grow: 1;
+    width: 50%;
+  }
+  .descricao {
+    font-size: 18px;
+    margin-top: 4rem;
   }
 
   h2 {
@@ -48,12 +54,6 @@ const StyledLivro = styled.article`
     font-size: 16px;
     color: #666;
     margin-bottom: 10px;
-  }
-
-  .descricao {
-    font-size: 18px;
-    margin-top: 20px;
-    width: 100%;
   }
 
   .preco {
