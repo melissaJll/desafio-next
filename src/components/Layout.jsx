@@ -37,11 +37,14 @@ const StyledLayout = styled.div`
     font-family: "Creepster", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 7rem;
+    font-size: 4rem;
     text-align: center;
     color: #eae5d3;
     &:hover {
       color: #ec1111;
+    }
+    @media screen and (min-width: 400px) {
+      font-size: 7rem;
     }
   }
 
