@@ -8,7 +8,7 @@ export default function ListaLivros({ livros }) {
         {livros.map((livro) => {
           return (
             <article key={livro.id}>
-              <Link href={`/books/${livro.id}`}>
+              <Link href={`/livros/${livro.id}`}>
                 <h3>{livro.Title}</h3>
                 <p>Páginas: {livro.Pages} </p>
                 <p>Ano de Lançamento: {livro.Year}</p>
