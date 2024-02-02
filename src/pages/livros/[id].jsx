@@ -44,16 +44,22 @@ export default function Livro({ livros }) {
         <h2>
           {livros.id}# {livros.Title}
         </h2>
-        <p>Ano de Publicação: {livros.Year} </p>
-        <p className="preco">R$ 200</p>
+
         <p className="descricao">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
           eros ut posuere fermentum, elit velit fermentum odio, id luctus ipsum
           nulla ut nisl. Quisque quis sapien felis. Sed viverra eros nisi, ac
           lobortis felis efficitur et.
         </p>
+        <b>
+          Indicações:
+          {livros.Notes.map((indicacao) => (
+            <p> {indicacao}</p>
+          ))}
+        </b>
 
         <p>ISBN: {livros.ISBN} </p>
+        <p>Ano de Publicação: {livros.Year} </p>
       </div>
     </StyledLivro>
   );
@@ -62,15 +68,18 @@ export default function Livro({ livros }) {
 const StyledLivro = styled.article`
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  max-width: 690px;
-  margin: 2rem auto;
+  max-width: 700px;
+  margin: 4rem auto;
   padding: 1rem;
+  border: #1719315e 1px solid;
+  padding: 3.1rem;
+  border-radius: 10px;
 
   img {
     max-width: 300px;
     height: auto;
-    margin-right: 20px;
   }
 
   .info {
@@ -79,7 +88,7 @@ const StyledLivro = styled.article`
   }
   .descricao {
     font-size: 18px;
-    margin-top: 2rem;
+    margin: 1rem auto;
   }
 
   h2 {
@@ -97,5 +106,14 @@ const StyledLivro = styled.article`
     font-size: 20px;
     font-weight: bold;
     color: #333;
+  }
+  @media screen and (min-width: 500px) {
+    /* background-color: #c49d8d; */
+    img {
+      margin-right: 20px;
+    }
+    .descricao {
+      margin: 2rem auto;
+    }
   }
 `;
