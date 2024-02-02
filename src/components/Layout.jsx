@@ -39,7 +39,7 @@ const StyledLayout = styled.div`
     font-style: normal;
     font-size: 4rem;
     text-align: center;
-    color: #eae5d3;
+    color: #e7e1cc;
     &:hover {
       color: #ec1111;
     }
