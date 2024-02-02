@@ -51,6 +51,9 @@ export default function Livro({ livros }) {
           nulla ut nisl. Quisque quis sapien felis. Sed viverra eros nisi, ac
           lobortis felis efficitur et.
         </p>
+        <p>
+          <b>Páginas:</b> {livros.Pages}
+        </p>
         <b>
           Indicações:
           {livros.Notes.map((indicacao) => (
@@ -58,8 +61,12 @@ export default function Livro({ livros }) {
           ))}
         </b>
 
-        <p>ISBN: {livros.ISBN} </p>
-        <p>Ano de Publicação: {livros.Year} </p>
+        <p>
+          <b>ISBN:</b> {livros.ISBN}{" "}
+        </p>
+        <p>
+          <b>Ano de Publicação:</b> {livros.Year}{" "}
+        </p>
       </div>
     </StyledLivro>
   );
@@ -100,6 +107,9 @@ const StyledLivro = styled.article`
     font-size: 16px;
     color: #666;
     margin-bottom: 10px;
+  }
+  b {
+    color: black;
   }
 
   .preco {
