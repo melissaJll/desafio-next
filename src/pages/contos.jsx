@@ -1,5 +1,6 @@
 import ListaContos from "@/components/ListaContos";
 import serverApi from "./api/server";
+import Head from "next/head";
 
 export async function getStaticProps() {
   try {
@@ -26,6 +27,9 @@ export async function getStaticProps() {
 export default function Contos({ contos }) {
   return (
     <>
+      <Head>
+        <title>Contos</title>
+      </Head>
       <section>
         <h2>Contos</h2>
       </section>
