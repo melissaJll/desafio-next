@@ -38,6 +38,7 @@ const StyledLayout = styled.div`
     font-weight: 400;
     font-style: normal;
     font-size: 7rem;
+    text-align: center;
     color: #eae5d3;
     &:hover {
       color: #ec1111;
