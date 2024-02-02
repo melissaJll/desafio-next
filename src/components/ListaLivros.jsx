@@ -51,7 +51,7 @@ const StyledListaLivros = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 85%;
+  max-width: 1100px;
   margin: auto;
 
   article {
@@ -75,7 +75,7 @@ const StyledListaLivros = styled.div`
     }
     @media screen and (min-width: 900px) {
       /* background-color: #c49d8d; */
-      width: 25%;
+      width: 44%;
     }
   }
   summary {
