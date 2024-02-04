@@ -11,7 +11,7 @@ export async function getStaticProps({ params }) {
       throw new Error(`Erro: ${resposta.status} - ${resposta.statusText}`);
     }
     const dados = await resposta.json();
-    console.log(dados);
+    // console.log(dados);
 
     return {
       props: {
