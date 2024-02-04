@@ -36,7 +36,7 @@ export default function Livro({ contos }) {
   return (
     <StyledLivro>
       <img
-        src="https://stephenking.com/images/novel/holly.jpg"
+        src="https://stephenking.com/images/books/nightmares_and_dreamscapes/hardcover_prop_embed.jpg"
         alt="Imagem do Livro"
       />
       <div className="info">
@@ -51,22 +51,6 @@ export default function Livro({ contos }) {
           nulla ut nisl. Quisque quis sapien felis. Sed viverra eros nisi, ac
           lobortis felis efficitur et.
         </p>
-        {/* <p>
-          <b>Páginas:</b> {contos.Pages}
-        </p>
-        <b>
-          Indicações:
-          {contos.Notes.map((indicacao) => (
-            <p> {indicacao}</p>
-          ))}
-        </b> */}
-        {/* 
-        <p>
-          <b>ISBN:</b> {contos.ISBN}{" "}
-        </p>
-        <p>
-          <b>Ano de Publicação:</b> {contos.Year}{" "}
-        </p> */}
       </div>
     </StyledLivro>
   );

@@ -9,7 +9,10 @@ export default function ListaContos({ contos }) {
           return (
             <article key={conto.id}>
               <Link href={`/contos/${conto.id}`}>
-                <h3>{conto.title}</h3>
+                <div>
+                  <h3>{conto.title}</h3>
+                  <p>{contos.year}</p>
+                </div>
               </Link>
             </article>
           );
@@ -50,5 +53,8 @@ const StyledListaContos = styled.div`
   }
   details {
     cursor: pointer;
+  }
+  p {
+    background-color: green;
   }
 `;
