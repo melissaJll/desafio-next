@@ -10,10 +10,10 @@ export default function ListaLivros({ livros }) {
             <article key={livro.id}>
               <Link href={`/livros/${livro.id}`}>
                 <div className="imagem-livros">
-                  {/* <img
+                  <img
                     src="https://stephenking.com/images/novel/holly.jpg"
                     alt="Imagem do Livro"
-                  /> */}
+                  />
                   {/* <img
                     src="https://via.placeholder.com/450x300"
                     alt="Imagem do Livro"
