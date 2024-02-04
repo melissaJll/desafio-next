@@ -8,7 +8,7 @@ export default function ListaContos({ contos }) {
         {contos.map((conto) => {
           return (
             <article key={conto.id}>
-              <Link href={`/books/${conto.id}`}>
+              <Link href={`/contos/${conto.id}`}>
                 <h3>{conto.title}</h3>
               </Link>
             </article>
