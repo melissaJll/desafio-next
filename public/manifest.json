@@ -1,6 +1,6 @@
 {
-  "short_name": "petshop",
-  "name": "Petshop com Next.js",
+  "short_name": "desafio-next",
+  "name": "Desafio Next.js",
   "description": "Exemplo de uma PWA criada com Next.js",
   "icons": [
     {
