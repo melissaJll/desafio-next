@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -10,10 +11,12 @@ export default function ListaLivros({ livros }) {
             <article key={livro.id}>
               <Link href={`/livros/${livro.id}`}>
                 <div className="imagem-livros">
-                  <img
-                    src="https://stephenking.com/images/novel/holly.jpg"
-                    alt="Imagem do Livro"
-                  />
+                  <Image
+                    width={319}
+                    height={410}
+                    src="/images/livro.webp"
+                    alt="autor stephen king"
+                  ></Image>
                   {/* <img
                     src="https://via.placeholder.com/450x300"
                     alt="Imagem do Livro"

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import serverApi from "../api/server";
+import Image from "next/image";
 
 export async function getStaticProps({ params }) {
   const { id } = params;
@@ -36,10 +37,12 @@ export async function getStaticPaths() {
 export default function Livro({ livros }) {
   return (
     <StyledLivro>
-      <img
-        src="https://stephenking.com/images/novel/holly.jpg"
-        alt="Imagem do Livro"
-      />
+      <Image
+        width={319}
+        height={410}
+        src="/images/livro.webp"
+        alt="autor stephen king"
+      ></Image>
       <div className="info">
         <h2>
           {livros.id}# {livros.Title}

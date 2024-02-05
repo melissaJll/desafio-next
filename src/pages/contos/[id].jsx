@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import serverApi from "../api/server";
+import Image from "next/image";
 
 export async function getStaticProps({ params }) {
   const { id } = params;
@@ -35,10 +36,12 @@ export async function getStaticPaths() {
 export default function Livro({ contos }) {
   return (
     <StyledLivro>
-      <img
-        src="https://stephenking.com/images/books/nightmares_and_dreamscapes/hardcover_prop_embed.jpg"
-        alt="Imagem do Livro"
-      />
+      <Image
+        width={340}
+        height={320}
+        src="/images/conto.webp"
+        alt="autor stephen king"
+      ></Image>
       <div className="info">
         <h2>
           {contos.id}# {contos.title}
