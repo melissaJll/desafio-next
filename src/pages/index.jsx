@@ -50,14 +50,7 @@ export default function Home({ livros }) {
         </p>
 
         <h1>O Autor</h1>
-        {/* 
-        <Image
-          className="circle-image"
-          width={320}
-          height={250}
-          src="/images/stephen-king.jpg"
-          alt="autor stephen king"
-        /> */}
+
         <Image
           className="circle-image"
           width={340}

@@ -17,10 +17,6 @@ export default function ListaLivros({ livros }) {
                     src="/images/livro.webp"
                     alt="autor stephen king"
                   ></Image>
-                  {/* <img
-                    src="https://via.placeholder.com/450x300"
-                    alt="Imagem do Livro"
-                  /> */}
                 </div>
                 <h3>{livro.Title}</h3>
                 <p>Páginas: {livro.Pages} </p>
