@@ -30,6 +30,7 @@ export default function Livros({ livros }) {
     <>
       <Head>
         <title>Livros</title>
+        <meta name="keywords" content="livros, stephen king" />
       </Head>
       <StyledLivros>
         <h3>Livros</h3>

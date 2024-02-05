@@ -33,7 +33,10 @@ export default function Home({ livros }) {
       <Head>
         <title>STEPHEN KING - 2024</title>
         <meta name="description" content="" />
-        <meta name="keywords" content="" />
+        <meta
+          name="keywords"
+          content="informações stephen king, stephen king"
+        />
       </Head>
 
       <StyledHome>

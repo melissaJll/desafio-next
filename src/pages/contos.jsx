@@ -30,6 +30,7 @@ export default function Contos({ contos }) {
     <>
       <Head>
         <title>Contos</title>
+        <meta name="keywords" content="contos, historias" />
       </Head>
       <StyledContos>
         <h2>Contos</h2>
