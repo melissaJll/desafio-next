@@ -21,7 +21,6 @@ export default function ListaLivros({ livros }) {
                     src="https://via.placeholder.com/450x300"
                     alt="Imagem do Livro"
                   /> */}
-                  <img src="images/livro.png" alt="" />
                 </div>
                 <h3>{livro.Title}</h3>
                 <p>Páginas: {livro.Pages} </p>
